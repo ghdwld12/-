@@ -1,0 +1,168 @@
+@charset "utf-8";button,fieldset,img{border:0}.jd-slider,.jd-slider .slide-inner{overflow:hidden;position:relative;width:100%}
+blockquote,body,button,code,dd,div,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,legend,li,ol,p,pre,select,td,textarea,th,ul{margin:0;padding:0}dl,li,menu,ol,ul{list-style:none}blockquote,q{quotes:none}button,input,select,textarea{vertical-align:middle}button{background-color:transparent;cursor:pointer}body{background:#fff}body,button,input,select,td,textarea,th{line-height:1.5;font-family:'돋움',dotum,sans-serif;color:#333}a{color:#333;text-decoration:none}a:active,a:hover{text-decoration:underline}address,caption,cite,code,dfn,em,var{font-style:normal;font-weight:400}.jd-slider{margin:0 auto;padding:0}.jd-slider .slide-area{width:100%;margin:0;padding:0}.jd-slider .slide-area:after{display:block;content:'';clear:both}.jd-slider .slide-area li{display:none;float:left;width:100%}.jd-slider .slide-area li:first-child{display:block}.jd-slider .slide-area li img{display:block;width:100%}.jd-slider .next,.jd-slider .prev{position:absolute;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);color:#000}.jd-slider .hidden.next,.jd-slider .hidden.prev{display:none}.jd-slider .prev{left:0}.jd-slider .next{right:0}.jd-slider .controller{width:100%;text-align:center}.jd-slider .controller .auto{display:inline-block;vertical-align:middle}.jd-slider .controller .auto i{display:none;color:#333}.jd-slider .controller .auto.pause .fa-pause,.jd-slider .controller .auto.play .fa-play{display:block}.jd-slider .controller .indicate-area{display:inline-block}.jd-slider .controller .indicate-area a{display:inline-block;position:relative;width:16px;height:16px;margin:0 5px;font-size:0;color:transparent;vertical-align:middle}.jd-slider .controller .indicate-area a:after{content:'';position:absolute;top:0;left:0;width:inherit;height:inherit;-webkit-box-sizing:border-box;box-sizing:border-box;border:2px solid #333;border-radius:50%}.jd-slider .controller .indicate-area a.on:after{background-color:#333}.jd-slider a{font-size:1.5rem}.jd-slider.fade .slide-area li{display:block;position:absolute;top:0;left:0;opacity:0;-webkit-transform:translateZ(0);transform:translateZ(0)}.jd-slider.fade .slide-area li:first-child{position:static;opacity:1}.jd-slider.slider--none .controller,.jd-slider.slider--none .next,.jd-slider.slider--none .prev{display:none};
+@import url('//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
+
+/* font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif'; */
+*{
+	margin:0;padding:0;text-decoration:none;list-style: none;
+    font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+}
+
+html{font-size:16px;width:1920px;}
+body {
+  background:#ffffff;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+a{color:#333;}
+a:link{color:#333; }
+a:visited{color:#333;}
+a:hover{color:#333;}
+a:active{color:#333;}
+
+
+
+.wrap{
+	width:1200px;
+	margin:0 auto;
+}
+h2{
+    display:none;
+	visibility:hidden;
+	width:0; height:0;
+	overflow:hidden;
+	text-indent:-9999px;
+}
+.clear::after{
+	content:'';
+	clear:both;
+	width:0;
+	height:0;
+	overflow:hidden;
+	display:block;
+}
+.header,#gnb,#util,#collection,
+.small_bnr,.behind,.footer{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-around;
+    align-items:center;
+}
+/*헤더 스타일*/
+#util a,.header>h1{
+    display:block;
+    font-weight:bold;
+    line-height:80px;
+    padding:0 20px;
+}
+
+#gnb a{padding:0 30px;}
+#gnb{justify-content:center;}
+#util a img,header>h1 img{vertical-align:middle;}
+header{height:80px;}
+/*gnb*/
+.menu{
+    width:100%;
+}
+.menu>li{
+    display:block;
+    font-weight:bold;
+  
+    padding:0 20px;
+text-align: center;
+    height:80px;
+    line-height:80px;
+}
+
+.submenu{display:none;}
+
+.submenu>li{
+    background:#fda982;
+    color:#fff;
+	
+}
+.submenu>li>a:hover{color: rgb(255, 255, 162);}
+.menu>li:hover{z-index: 999999;}
+.submenu>li>a{display: block;color:#000;}
+/*공통 line*/
+.line{
+	margin:0 auto;
+	text-align:center;
+	font-size:28px;
+	font-weight:800;
+	padding:30px 0 50px;
+}
+
+/*visual_bnr*/
+#visual_bnr{width:1920px;margin:0 auto;}
+
+/*since*/
+.since{text-align: center;padding:80px 0 0; }
+.since>img{width:250px;}
+.since>p{padding:5px;font-size:32px;}
+.since>p:last-child{font-size:25px;}
+
+/*focus*/
+
+
+.focus>p>img{vertical-align:middle;}
+
+
+.focus_li>ul{
+	display:flex;
+	justify-content: space-around;
+	flex-flow:row wrap;
+	background:rgba(255,255,255,0.5);
+}
+
+.focus_li{background: url("../img/focus_bg.jpg");}
+.focus_li>ul>li img:hover{transform:scale(1.1);transition: all 0.5s;}
+.focus_li>ul>li{
+	text-align: center;
+	padding:20px 60px;
+	font-size:20px;
+	font-weight: 800;
+}
+.focus_li>ul>li p{color:#fff;}
+.best_bg{background:#f4f4f4;}
+
+/*best*/
+.best>ul{display:flex;justify-content: space-between; flex-flow:row wrap;}
+
+/*banner*/
+.banner{display:flex;justify-content: space-between;align-items: center;}
+.banner>p:nth-child(2)>a>img{width:510px;}
+.banner>p:nth-of-type(3)>a>img{width:510px;}
+
+/*footer*/
+footer{background:#c5c2c1; padding:50px 0;margin-top:50px;font-size: 14px;}
+.footer_u>li{float:left;border-right:1px solid #333;padding:0 10px; box-sizing: border-box;}
+.footer_u>li:last-child{border-right: 0;}
+.footer_u>li:first-child{padding-left:0;}
+.footer_u::after{
+	content:'';
+	width:0; height:0;
+	display:block;
+	clear:both;
+	visibility:hidden;
+}
+.footer{display:flex;display:flex;justify-content: space-between;}
+.footer_u{padding:10px 0; font-size:16px; font-weight:600;}
+.info>p:first-child{padding:10px 0 0; font-size:16px; font-weight:600;}
+.info>p:last-child{line-height: 1.8;font-weight: 500;}
+.footer p{line-height: 1.8;font-weight: 500;}
+.info>span{font-size:23px;font-weight: 700; color:#eb5512; padding-bottom:50px;}
+.copyright{padding-top:10px;}
+.owner{padding-top:20px;}
+
+
+.mypage>ul{display:none;}
+.mypage>ul:hover{display:block; z-index: 99;}
+
+
+.best>ul>li>a>img:first-child:hover{ 
+    box-shadow: 0 0 10px rgb(0 0 0 / 60%);}
+
